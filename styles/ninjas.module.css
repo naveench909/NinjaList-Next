@@ -1,0 +1,19 @@
+.singleNinja{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    height: 80px;
+    width: 80vw;
+    padding: 0 25px;
+    font-size: 25px;
+    background-color: white;
+}
+
+.Ninja :hover{
+    border-left: 10px solid lightblue;
+}
+
+.singleNinja :hover{
+    border-left: none;
+}
