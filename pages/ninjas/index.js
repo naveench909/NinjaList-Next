@@ -18,6 +18,7 @@ const NinjaList = ({ninjas}) => {
         }
     }
 
+    
     useEffect(() => {
         secureRoute();
     }, [])
