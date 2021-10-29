@@ -2,7 +2,6 @@
   "name": "ninja-list",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://3.19.221.135",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
