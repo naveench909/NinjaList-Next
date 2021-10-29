@@ -18,14 +18,6 @@ const NinjaList = ({ninjas}) => {
         }
     }
 
-    const secureRoute1 = () => {
-        const [session ] = useSession();
-        if(!session){
-            // signIn();
-        }else{
-            setLoading(false);
-        }
-    }
     useEffect(() => {
         secureRoute();
     }, [])
@@ -33,7 +25,6 @@ const NinjaList = ({ninjas}) => {
     if(loading){
         return <h1 style={{textAlign:'center'}}>Please SignIn before Access this page!</h1>
     }
-    // console.log(ninjas);
     return ( 
         <React.Fragment>
             <Head>
@@ -42,17 +33,10 @@ const NinjaList = ({ninjas}) => {
             <h1>All Ninjas</h1>
             {ninjas.map((ninja)=>{
                 return (
-                    <div className={styles.Ninja} key={ninja.id} onClick={()=>setShow(true)}>
-                    {/* <Link href={`/ninjas/${ninja.id}`}>
+                    <div className={styles.Ninja} key={ninja.id} onClick={()=>setShow(true)}>                   
                         <a className={styles.singleNinja}>
                             <h4>{ninja.name}</h4>
                         </a>
-                    </Link> */}
-                    
-                        <a className={styles.singleNinja}>
-                            <h4>{ninja.name}</h4>
-                        </a>
-                    
                     </div>
                 )
             })}
